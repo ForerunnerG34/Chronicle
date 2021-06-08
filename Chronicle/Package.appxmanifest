@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="33736CsarIntriago.ADevelopersChronicle"
+    Publisher="CN=9D215482-4C4B-475C-BE6C-128C7438346E"
+    Version="1.0.9.0" />
+
+  <mp:PhoneIdentity PhoneProductId="0c63adde-c8f5-4d36-a5f6-f32b8c635816" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>A Developer&apos;s Chronicle</DisplayName>
+    <PublisherDisplayName>César Intriago</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="Chronicle.App">
+      <uap:VisualElements
+        DisplayName="A Developer&apos;s Chronicle"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="A simple note taking app that automatically saves everything you type."
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png" ShortName="Chronicle">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Assets\SplashScreen.png"  BackgroundColor="transparent"/>
+        <uap:LockScreen BadgeLogo="Assets\BadgeLogo.png" Notification="badgeAndTileText"/>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+</Package>
