@@ -9,7 +9,7 @@
   <Identity
     Name="33736CsarIntriago.ADevelopersChronicle"
     Publisher="CN=9D215482-4C4B-475C-BE6C-128C7438346E"
-    Version="1.0.9.0" />
+    Version="1.0.11.0" />
 
   <mp:PhoneIdentity PhoneProductId="0c63adde-c8f5-4d36-a5f6-f32b8c635816" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

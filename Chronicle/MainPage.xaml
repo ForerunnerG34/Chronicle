@@ -5,8 +5,7 @@
     xmlns:local="using:Chronicle"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource SystemControlChromeHighAcrylicWindowMediumBrush}"
+    mc:Ignorable="d"    
     Loaded="Page_Loaded">
     <Page.Resources>
        
@@ -52,16 +51,18 @@
         </Style>
     </Page.Resources>
 
-    <Grid x:Name="MainContent" Background="Transparent">
+    <Grid x:Name="MainContent">
         <Grid.RowDefinitions>
             <RowDefinition Height="32"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Margin="15,6,0,0">Chronicles</TextBlock>
+        <Border Grid.Row="0" Background="{ThemeResource SystemControlChromeHighAcrylicWindowMediumBrush}">
+            <TextBlock Margin="15,6,0,0">Chronicles</TextBlock>
+        </Border>
         <RichEditBox x:Name="TextContent"
                      Grid.Row="1"
                      Style="{StaticResource CleanRichEditBoxStyle}" 
-                     Background="Transparent"
+                     Background="{StaticResource SystemChromeMediumColor}"
                      FontFamily="Assets/Fonts/CascadiaCodePL.ttf#Cascadia Code PL" 
                      BorderThickness="0"
                      Padding="20"
